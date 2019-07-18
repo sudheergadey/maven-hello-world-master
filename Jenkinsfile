@@ -1,17 +1,17 @@
 pipeline {
          agent any
          stages {
-                 stage('One') {
+                 stage('Welcome Message') {
                  steps {
-                     echo 'Hi, this is Zulaikha from edureka'
+                     echo 'Hi, this is Raja from Tieto'
                  }
                  }
-                 stage('Two') {
+                 stage('Proceed') {
                  steps {
-                    input('Do you want to proceed?')
+                    input('Would you like to proceed further')
                  }
                  }
-                 stage('Three') {
+                 stage('Ifyes') {
                  when {
                        not {
                             branch "master"
